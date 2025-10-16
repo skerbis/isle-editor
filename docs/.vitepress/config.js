@@ -81,6 +81,25 @@ export default defineConfig({
                 ],
               },
               {
+                text: "Development",
+                items: [
+                  {
+                    text: "Extension Development",
+                    link: "/guide/extension-development",
+                  },
+                  {
+                    text: "Customizing Extensions",
+                    link: "/guide/customizing-extensions",
+                  },
+                ],
+              },
+              {
+                text: "Integration",
+                items: [
+                  { text: "REDAXO CMS", link: "/guide/redaxo-integration" },
+                ],
+              },
+              {
                 text: "Used in Vue3",
                 link: "/vue3/quick-start",
               },
@@ -104,6 +123,25 @@ export default defineConfig({
             items: [
               { text: "Introduction", link: "/guide/introduction" },
               { text: "Quick Start", link: "/guide/quick-start" },
+            ],
+          },
+          {
+            text: "Development",
+            items: [
+              {
+                text: "Extension Development",
+                link: "/guide/extension-development",
+              },
+              {
+                text: "Customizing Extensions",
+                link: "/guide/customizing-extensions",
+              },
+            ],
+          },
+          {
+            text: "Integration",
+            items: [
+              { text: "REDAXO CMS", link: "/guide/redaxo-integration" },
             ],
           },
           {
@@ -295,6 +333,25 @@ export default defineConfig({
                 ],
               },
               {
+                text: "开发",
+                items: [
+                  {
+                    text: "扩展开发",
+                    link: "/zh/guide/extension-development",
+                  },
+                  {
+                    text: "自定义扩展",
+                    link: "/zh/guide/customizing-extensions",
+                  },
+                ],
+              },
+              {
+                text: "集成",
+                items: [
+                  { text: "REDAXO CMS", link: "/zh/guide/redaxo-integration" },
+                ],
+              },
+              {
                 text: "Vue3 中使用",
                 link: "/zh/vue3/quick-start",
               },
@@ -317,6 +374,25 @@ export default defineConfig({
             items: [
               { text: "介绍", link: "/zh/guide/introduction" },
               { text: "快速开始", link: "/zh/guide/quick-start" },
+            ],
+          },
+          {
+            text: "开发",
+            items: [
+              {
+                text: "扩展开发",
+                link: "/zh/guide/extension-development",
+              },
+              {
+                text: "自定义扩展",
+                link: "/zh/guide/customizing-extensions",
+              },
+            ],
+          },
+          {
+            text: "集成",
+            items: [
+              { text: "REDAXO CMS", link: "/zh/guide/redaxo-integration" },
             ],
           },
           {
