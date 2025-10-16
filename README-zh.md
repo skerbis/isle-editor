@@ -51,6 +51,67 @@
 
 访问我们的 [在线演示](https://playground.islenote.com) 快速体验 `isle-editor` 的功能。
 
+## 从源码构建
+
+### 前提条件
+
+- Node.js >= 22.0.0
+- pnpm 9.6.0 或更高版本
+
+### 安装
+
+```bash
+# 全局安装 pnpm（如果还没有安装）
+npm install -g pnpm@9.6.0
+
+# 克隆仓库
+git clone https://github.com/isboyjc/isle-editor.git
+cd isle-editor
+
+# 安装依赖
+pnpm install
+```
+
+### 构建命令
+
+```bash
+# 构建所有包
+pnpm build
+
+# 构建特定包
+pnpm build:core       # 构建 @isle-editor/core
+pnpm build:vue3       # 构建 @isle-editor/vue3
+pnpm build:packages   # 构建所有包
+pnpm build:docs       # 构建文档
+pnpm build:play       # 构建演示项目
+
+# 开发模式
+pnpm dev              # 启动所有开发服务器
+pnpm dev:docs         # 启动文档开发服务器
+pnpm dev:play         # 启动演示项目开发服务器
+```
+
+### 项目结构
+
+```
+isle-editor/
+├── packages/
+│   ├── core/         # 核心编辑器功能和扩展
+│   └── vue3/         # Vue 3 视图组件
+├── docs/             # VitePress 文档
+├── playground/       # 开发演示项目
+└── shared/           # 共享配置（rollup 等）
+```
+
+## 文档
+
+有关使用和扩展 isle-editor 的详细指南，请访问我们的 [文档](https://editor.islenote.com)：
+
+- [快速开始指南](./docs/zh/guide/quick-start.md)
+- [扩展开发](./docs/zh/guide/extension-development.md)
+- [自定义扩展](./docs/zh/guide/customizing-extensions.md)
+- [REDAXO CMS 集成](./docs/zh/guide/redaxo-integration.md)
+
 ## License
 
 isle-editor 是开源软件，许可证为 [MIT 许可证](https://github.com/isboyjc/isle-editor/blob/main/LICENSE)。

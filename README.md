@@ -51,6 +51,67 @@ isle-editor is suitable for various scenarios:
 
 Visit our [online playground](https://playground.islenote.com) to quickly experience isle-editor in action.
 
+## Building from Source
+
+### Prerequisites
+
+- Node.js >= 22.0.0
+- pnpm 9.6.0 or later
+
+### Installation
+
+```bash
+# Install pnpm globally if you haven't already
+npm install -g pnpm@9.6.0
+
+# Clone the repository
+git clone https://github.com/isboyjc/isle-editor.git
+cd isle-editor
+
+# Install dependencies
+pnpm install
+```
+
+### Build Commands
+
+```bash
+# Build all packages
+pnpm build
+
+# Build specific packages
+pnpm build:core       # Build @isle-editor/core
+pnpm build:vue3       # Build @isle-editor/vue3
+pnpm build:packages   # Build all packages
+pnpm build:docs       # Build documentation
+pnpm build:play       # Build playground
+
+# Development mode
+pnpm dev              # Start all dev servers
+pnpm dev:docs         # Start documentation dev server
+pnpm dev:play         # Start playground dev server
+```
+
+### Project Structure
+
+```
+isle-editor/
+├── packages/
+│   ├── core/         # Core editor functionality and extensions
+│   └── vue3/         # Vue 3 view components
+├── docs/             # VitePress documentation
+├── playground/       # Development playground
+└── shared/           # Shared configurations (rollup, etc.)
+```
+
+## Documentation
+
+For detailed guides on using and extending isle-editor, visit our [documentation](https://editor.islenote.com):
+
+- [Quick Start Guide](./docs/guide/quick-start.md)
+- [Extension Development](./docs/guide/extension-development.md)
+- [Customizing Extensions](./docs/guide/customizing-extensions.md)
+- [REDAXO CMS Integration](./docs/guide/redaxo-integration.md)
+
 ## License
 
 isle-editor is open sourced software licensed under the [MIT license](https://github.com/isboyjc/isle-editor/blob/main/LICENSE).
